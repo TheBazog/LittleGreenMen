@@ -11,11 +11,19 @@
     padding: 0;
     font-family: 'VCR OSD Mono', monospace;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
   }
   #main-text {
     text-align: center;
@@ -55,11 +63,48 @@
     right: 10px;
     bottom: 20%;
   }
+  #video-container {
+    max-width: 640px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  #left-section {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
-<div id="main-text">Little Green Men: A Documentary</div>
-<div id="sub-text">A <a id="bazog" href="https://www.youtube.com/@Bazog/featured">Bazog</a> & <a id="joombles" href="https://www.youtube.com/@joombles/featured">Joombles</a> Production</div>
+<div id="left-section">
+  <a href="AInfo.html" class="button">Adam's Info Section</a>
+  <a href="ETProof.html" class="button">Alien Proof</a>
+</div>
+<div id="content">
+  <div id="main-text">Little Green Men: A Documentary</div>
+  <div id="sub-text">A <a id="bazog" href="https://www.youtube.com/@Bazog/featured">Bazog</a> & <a id="joombles" href="https://www.youtube.com/@joombles/featured">Joombles</a> Production</div>
+  <div id="video-container">
+    <video width="640" height="480" controls>
+      <source src="Little Green Men Coming Soon.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 <img class="alien-gif left" src="alienspin.gif" alt="Alien" />
 <img class="alien-gif right" src="alienspin.gif" alt="Alien" />
 </body>
