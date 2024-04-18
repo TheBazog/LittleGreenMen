@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Green Men: A Documentary</title>
+<style>
+  body {
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+    font-family: 'VCR OSD Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  #main-text {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  #sub-text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #sub-text a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s, color 0.3s;
+  }
+  #sub-text a:hover {
+    font-size: 20px;
+  }
+  #sub-text a#bazog:hover {
+    color: purple;
+  }
+  #sub-text a#joombles:hover {
+    color: red;
+  }
+  .alien-gif {
+    max-width: 300px;
+    position: absolute;
+  }
+  .alien-gif.left {
+    left: 10px;
+    bottom: 20%;
+  }
+  .alien-gif.right {
+    right: 10px;
+    bottom: 20%;
+  }
+</style>
+</head>
+<body>
+<div id="main-text">Little Green Men: A Documentary</div>
+<div id="sub-text">A <a id="bazog" href="https://www.youtube.com/@Bazog/featured">Bazog</a> & <a id="joombles" href="https://www.youtube.com/@joombles/featured">Joombles</a> Production</div>
+<img class="alien-gif left" src="alienspin.gif" alt="Alien" />
+<img class="alien-gif right" src="alienspin.gif" alt="Alien" />
+</body>
+</html>
